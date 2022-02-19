@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import './App.css';
 
 function App() {
@@ -6,7 +7,15 @@ function App() {
     base:"https://api.openweathermap.org/data/2.5/"
   }
   // api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
-
+  const [name , setName]=useState('');
+  const [weather , setWeather ]=useState([]);
+  useEffect(()=>{
+    fetch(`${api.base}/weather?q=vietnam&appid=${api.key}`)
+      .then(res=>res.json())
+      .then(data=>{
+        setWeather(data)
+      })
+  },[])
   return (
     <div className="App">
       
