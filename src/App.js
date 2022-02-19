@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Default from './assets/Sunset.jpg'
 import './App.css';
 
 function App() {
@@ -16,9 +17,12 @@ function App() {
         setWeather(data)
       })
   },[])
+  console.log(weather)
   return (
     <div className="App">
-      
+      <div className='app'>
+      <img src={Default} />
+      </div>
     </div>
   );
 }
