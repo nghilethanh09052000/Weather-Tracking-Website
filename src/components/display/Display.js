@@ -29,7 +29,7 @@ const Display = ({name,setName,search,getTime,country,weather,temp,wind,feels_li
             <div className="search-box">
             <input 
                 className="search-bar"
-                placeholder="Search country"
+                placeholder="Search country..."
                 value={name}
                 onChange={(e)=>setName(e.target.value)}
                 onKeyPress={search}

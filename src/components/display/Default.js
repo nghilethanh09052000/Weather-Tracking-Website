@@ -4,7 +4,7 @@ const Default = ({name,setName,search,getTime}) => {
         <div className="search-box">
             <input 
                 className="search-bar"
-                placeholder="Search country"
+                placeholder="Search country..."
                 value={name}
                 onChange={(e)=>setName(e.target.value)}
                 onKeyPress={search}
