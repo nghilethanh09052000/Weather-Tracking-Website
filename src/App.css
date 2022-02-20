@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
 
 * {
   margin: 0;
@@ -7,10 +8,85 @@
 
 body {
   font-family: 'montseratt', sans-serif;
+
 }
-img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(120%);
+.App{
+  background-image: url('./assets/Default.jpg');
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease;
+}
+section{
+  display: flex;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+  padding: 25px;
+}
+.search-box{
+  width: 60%;
+  margin: auto 60px;
+  
+}
+.search-bar{
+  border-radius: 5px;
+  height: 100px;
+}
+.box{
+  width: 40%;
+  backdrop-filter:blur(5px);
+	box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+  animation: animateBox 2s
+}
+@keyframes animateBox {
+  from{
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+to {
+    opacity: 1;
+    transform: translateX(0);
+}
+  
+}
+.location-box{
+  text-align: center;
+}
+.weather-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.weather{
+  border-radius: 50%;
+  width: 200px;
+  height: 100px;
+  backdrop-filter:blur(15px);
+	box-shadow: 0 25px 45px rgba(197, 9, 9, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	background: rgba(230, 185, 185, 0.219);
+}
+.weather p {
+  text-align: center;
+  margin: 30px auto;
+
+}
+
+.information .text{
+  text-align: center;
+  
+}
+.temp{
+  margin: auto auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 80px;
 }

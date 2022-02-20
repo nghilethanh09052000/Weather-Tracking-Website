@@ -12,24 +12,34 @@ const Default = ({name,setName,search}) => {
         </div>
         <div className="box">
             <div className="location-box">
-                <div className="location">...</div>
-                <div className="date">...</div>
+                <div className="location">
+                    <h1>
+                        Welcome to our website
+                    </h1>  
+                </div>
+                <div className="date">
+                    <h2>Today is: Sunday</h2>
+                </div>
             </div> 
             <div className="weather-box">
-                <div className="weather">How is the weather today</div>
+                <div className="weather">
+                    <p>Country's temperature will show hear</p>
+                </div>
             </div>  
             <div className="information">
                 <hr />
                 <div className="text">
-                    Today is a good day
+                    <p>
+                        Weather information
+                    </p>
                 </div>
                 <hr />
-               <div className="information">
-                    <p>Temp :</p>
+               <div className="temp">
+                    <p>Temp:</p>
                     <p>Feels like:</p>
                </div>
                <hr />
-               <div className="information">
+               <div className="temp">
                     <p>Wind :</p>
                     <p>Humidity:</p>
                </div>
