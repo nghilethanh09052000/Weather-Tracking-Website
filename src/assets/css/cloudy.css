@@ -1,0 +1,19 @@
+.imgBox{
+    position: absolute;
+    z-index: 1000;
+    bottom: 0%;
+    left:0%;
+}
+.imgBox img{
+    width: 50%;
+    animation: animateCloud 20s linear infinite;
+}
+
+@keyframes animateCloud {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}

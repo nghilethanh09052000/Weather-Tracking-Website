@@ -1,4 +1,4 @@
-const None = ({name,setName,search,city,cod}) => {
+const None = ({name,setName,search,city,cod,getTime}) => {
     return ( 
         <section>
             <div className="search-box">
@@ -18,7 +18,7 @@ const None = ({name,setName,search,city,cod}) => {
                     </h1>  
                 </div>
                 <div className="date">
-                    <h2>Today is: Sunday</h2>
+                <h3>Today is: {getTime(new Date())}</h3>
                 </div>
             </div> 
             <div className="weather-box">

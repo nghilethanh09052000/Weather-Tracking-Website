@@ -1,4 +1,4 @@
-const Default = ({name,setName,search}) => {
+const Default = ({name,setName,search,getTime}) => {
     return (
     <section>
         <div className="search-box">
@@ -18,19 +18,19 @@ const Default = ({name,setName,search}) => {
                     </h1>  
                 </div>
                 <div className="date">
-                    <h2>Today is: Sunday</h2>
+                    <h3>Today is: {getTime(new Date())}</h3>
                 </div>
             </div> 
             <div className="weather-box">
                 <div className="weather">
-                    <p>Country's temperature will show hear</p>
+                    <p>The country's temperature will show here</p>
                 </div>
             </div>  
             <div className="information">
                 <hr />
                 <div className="text">
                     <p>
-                        Weather information
+                        The weather information will show here
                     </p>
                 </div>
                 <hr />

@@ -1,5 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins);
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,300;1,300&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -7,37 +6,38 @@
 }
 
 body {
-  font-family: 'montseratt', sans-serif;
+  font-family: 'Roboto Serif', sans-serif;
 
 }
 .App{
-  background-image: url('./assets/Default.jpg');
+  background-image: url('./assets/img/Default.jpg');
   background-size: cover;
   background-position: bottom;
   transition: 0.4 ease;
 }
 
 .App.cloud{
-  background-image: url('./assets/Cloud.jpg');
+  background-image: url('./assets/img/Cloud.jpg');
 }
 .App.rain{
-  background-image: url('./assets/Rain.jpg');
+  background-image: url('./assets/img/Rain.jpg');
 }
 .App.snow{
-  background-image: url('./assets/Snow.jpg');
+  background-image: url('./assets/img/Snow.jpg');
 }
 .App.thunderstorm{
-  background-image: url('./assets/Thunder.jpg');
+  background-image: url('./assets/img/Thunder.jpg');
 }
 .App.drizzle{
-  background-image: url('./assets/Drizzle.jpg');
+  background-image: url('./assets/img/Drizzle.jpg');
 }
 .App.clear{
-  background-image: url('./assets/Clear.jpg');
+  background-image: url('./assets/img/Clear.jpg');
   filter: brightness(150%);
 }
 
 section{
+  position: relative;
   display: flex;
   min-height: 100vh;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
@@ -55,13 +55,14 @@ section{
 .box{
   width: 40%;
   backdrop-filter:blur(5px);
-	box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 25px 45px rgba(24, 22, 22, 0.1);
 	border: 1px solid rgba(255, 255, 255, 0.5);
 	border-right: 1px solid rgba(255, 255, 255, 0.2);
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-	background: rgba(255, 255, 255, 0.1);
+	background: rgba(10, 10, 10, 0.1);
 	border-radius: 10px;
-  animation: animateBox 2s
+  animation: animateBox 2s;
+  margin: 50px 0;
 }
 @keyframes animateBox {
   from{
@@ -78,6 +79,16 @@ to {
 .location-box{
   text-align: center;
   text-transform: capitalize;
+
+}
+.location{
+  margin: 10px;
+  color: #FFF;
+
+}
+.date h3{ 
+  color: #FFF;
+  font-style: italic;
 }
 .weather-box{
   display: flex;
@@ -86,29 +97,39 @@ to {
   margin-bottom: 20px;
 }
 .weather{
-  border-radius: 50%;
-  width: 200px;
-  height: 100px;
-  backdrop-filter:blur(15px);
-	box-shadow: 0 25px 45px rgba(197, 9, 9, 0.1);
-	border: 1px solid rgba(255, 255, 255, 0.5);
-	border-right: 1px solid rgba(255, 255, 255, 0.2);
-	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-	background: rgba(230, 185, 185, 0.219);
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 15px 25px;
+  color: #FFF;
+  font-size: 102px;
+  font-weight: 900;
+  text-shadow: 1px 5px rgba(50, 50, 70, 0.5);
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
 }
 .weather p {
   text-align: center;
-  margin: 30px auto;
+  font-size: large;
+  color:rgba(255, 255, 255, 0.75);
+  text-align: center;
+  margin: auto 10px;
 
+  
 }
 
 .information .text{
   text-align: center;
-  
+  margin:20px ;
+  color: #FFF;
+  font-size: 20px;
 }
 .temp{
+  color: #FFF;
   margin: auto auto;
   display: flex;
   justify-content: space-between;
-  padding: 10px 80px;
+  padding: 10px 40px;
 }
