@@ -16,6 +16,27 @@ body {
   background-position: bottom;
   transition: 0.4 ease;
 }
+
+.App.cloud{
+  background-image: url('./assets/Cloud.jpg');
+}
+.App.rain{
+  background-image: url('./assets/Rain.jpg');
+}
+.App.snow{
+  background-image: url('./assets/Snow.jpg');
+}
+.App.thunderstorm{
+  background-image: url('./assets/Thunder.jpg');
+}
+.App.drizzle{
+  background-image: url('./assets/Drizzle.jpg');
+}
+.App.clear{
+  background-image: url('./assets/Clear.jpg');
+  filter: brightness(150%);
+}
+
 section{
   display: flex;
   min-height: 100vh;
@@ -56,6 +77,7 @@ to {
 }
 .location-box{
   text-align: center;
+  text-transform: capitalize;
 }
 .weather-box{
   display: flex;

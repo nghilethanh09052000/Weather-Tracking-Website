@@ -1,4 +1,4 @@
-const Display = ({name,setName,search,country,weather,temp,wind,feels_like,humidity,pressure}) => {
+const None = ({name,setName,search,city,cod}) => {
     return ( 
         <section>
             <div className="search-box">
@@ -14,7 +14,7 @@ const Display = ({name,setName,search,country,weather,temp,wind,feels_like,humid
             <div className="location-box">
                 <div className="location">
                     <h1>
-                        {country}
+                        {city}
                     </h1>  
                 </div>
                 <div className="date">
@@ -23,25 +23,25 @@ const Display = ({name,setName,search,country,weather,temp,wind,feels_like,humid
             </div> 
             <div className="weather-box">
                 <div className="weather">
-                    <p>{Math.round(temp-273)}</p>               
+                    <p>{cod}</p>               
             </div>
             </div>  
             <div className="information">
                 <hr />
                 <div className="text">
                     <p>
-                        {weather}
+                        Weather information
                     </p>
                 </div>
                 <hr />
                <div className="temp">
-                    <p>Pressure: {pressure}  </p>
-                    <p>Feels like: {feels_like} </p>
+                    <p>Temp: Nothing to show</p>
+                    <p>Feels like: Nothing to show</p>
                </div>
                <hr />
                <div className="temp">
-                    <p>Wind: {wind} </p>
-                    <p>Humidity: {humidity}</p>
+                    <p>Wind: Nothing to show</p>
+                    <p>Humidity: Nothing to show</p>
                </div>
             </div> 
         </div>
@@ -49,4 +49,4 @@ const Display = ({name,setName,search,country,weather,temp,wind,feels_like,humid
      );
 }
  
-export default Display;
+export default None;

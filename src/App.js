@@ -1,6 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './App.css';
 import Default from './components/display/Default'
+import None from './components/display/None'
 import Display from './components/display/Display';
 function App() {
   const [name , setName]=useState('');
@@ -17,12 +18,12 @@ const search = (e) =>{
       .then(res=>res.json())
       .then(data=>{
         setWeather(data)
+        console.log(data)
         setName('')
       })
     }
   }
   const backGround  = () =>{
-    if(weather.message==='city not found') return 'App default'
     const type = weather.weather[0].main
     switch(type){
       case 'Rain':
@@ -35,8 +36,8 @@ const search = (e) =>{
         return 'App thunderstorm'
       case 'Drizzle':
         return 'App drizzle'
-      case 'Sunny':
-        return 'App sunny'
+      case 'Clear':
+        return 'App clear'
       default:
         return 'App sunny'
     }
@@ -51,13 +52,15 @@ const search = (e) =>{
         />
       </div>
     );
-  }else if(weather.message==='city not found'){
+  }else if(weather.cod==='404'){
     return (
-      <div className="App default ">
-        <Default
+      <div className="App snow">
+        <None
           name={name}
           setName={setName}
           search={search}
+          city={weather.message}
+          cod={weather.cod}
         />
       </div>
     );
@@ -65,7 +68,17 @@ const search = (e) =>{
     return(
       <div className={backGround()}>
         <Display
+          name={name}
+          setName={setName}
+          search={search}
 
+          country={weather.name}
+          weather={weather.weather[0].main}
+          temp={weather.main.temp}
+          wind={weather.wind.speed}
+          feels_like={weather.main.feels_like}
+          humidity={weather.main.humidity}
+          pressure={weather.main.pressure}
         />
     </div>
     )
