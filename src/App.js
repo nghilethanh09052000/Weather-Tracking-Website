@@ -18,8 +18,10 @@ const search = (e) =>{
       .then(res=>res.json())
       .then(data=>{
         setWeather(data)
-        console.log(data)
         setName('')
+      })
+      .catch(err =>{
+        console.log(err)
       })
     }
   }

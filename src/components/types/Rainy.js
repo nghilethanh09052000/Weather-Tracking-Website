@@ -1,8 +1,12 @@
+import '../.././assets/css/rainy.css'
+
 const Rainy = () => {
     return (
-        <div>
-            
-        </div>
+      <div>
+        
+      </div>
+    
+   
       );
 }
  
