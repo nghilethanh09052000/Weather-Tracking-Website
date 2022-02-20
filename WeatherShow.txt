@@ -1,0 +1,13 @@
+Vietnam:
+weather.weather[0].main
+weather.main.temp
+weather.main.feels_like
+weather.main.pressure
+weather.win.speed
+
+Rainy: weather.weather[0].main ==="Rain"
+Cloudy: weather.weather[0].main==='Clouds'
+Snowy: weather.weather[0].main=== "Snow"
+ThunderStorm: weather.weather[0].main=== "Thunderstorm"
+Drizzle: weather.weather[0].main=== "Drizzle"
+Sunny: weather.weather[0].main==='Clear' 
