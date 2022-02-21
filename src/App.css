@@ -135,7 +135,7 @@ to {
 }
 .weather p {
   text-align: center;
-  font-size: large;
+  font-size: 25px;
   color:rgba(255, 255, 255, 0.75);
   text-align: center;
   margin: auto 10px;
