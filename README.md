@@ -1,6 +1,6 @@
 ### What is this project ?
-<p>This is my simple ReactJs tracking weather website that you can search for weather information from about 200 countries around the world. This project uses weather API from <a href="https://openweathermap.org/api">https://openweathermap.org/api</a> and adds some awesome effects.</p>
-<h1>Install this Todo_list_app:</h1>
+<p>The main purpose of this website is to allow you to check the weather information of about 200 cities in the world. This project uses weather API from <a href="https://openweathermap.org/api">https://openweathermap.org/api</a> and adds some awesome css effects.</p>
+<h1>Install this project:</h1>
 <p>1. Clone this github respository</p>
 <p>2. Download node in: https://nodejs.org/en/</p>
 <p>3. Open your terminal to the folder location, type: npm install</p>
