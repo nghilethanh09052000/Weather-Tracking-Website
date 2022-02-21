@@ -1,3 +1,4 @@
+
 const Default = ({name,setName,search,getTime}) => {
     return (
     <section>

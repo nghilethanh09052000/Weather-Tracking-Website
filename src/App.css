@@ -34,12 +34,16 @@ body {
 .App.clear{
   background-image: url('./assets/img/Clear.jpg');
   filter: brightness(150%);
-  animation: fade 2s linear;
+  animation: fade 2s ease;
   
 }
 @keyframes fade {
-  from {opacity: 0}
-  to {opacity: 1}
+  from{
+    filter: brightness(0%);
+  }
+  to{
+    filter: brightness(150%);
+  }
 }
 
 section{
@@ -54,7 +58,9 @@ section{
   width: 60%;
   margin: auto 60px;
   color: #000;
+  z-index: 1000;
 }
+
 .search-bar{
   border-radius: 5px;
   height: 50px;

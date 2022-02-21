@@ -62,7 +62,7 @@ const Display = ({name,setName,search,getTime,country,weather,temp,wind,feels_li
                 <hr />
                <div className="temp">
                     <p>Pressure: {pressure} hPa  </p>
-                    <p>Feels like: {feels_like} °C </p>
+                    <p>Feels like: {Math.round(feels_like-273)} °C </p>
                </div>
                <hr />
                <div className="temp">

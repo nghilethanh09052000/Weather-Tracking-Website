@@ -2,12 +2,8 @@ import '../.././assets/css/rainy.css'
 
 const Rainy = () => {
     return (
-      <div>
-        
-      </div>
-    
-   
-      );
+      <div className='rainBox'></div>
+    );
 }
  
 export default Rainy;
