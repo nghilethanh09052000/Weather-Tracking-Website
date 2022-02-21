@@ -1,5 +1,5 @@
 ### What is this project ?
-<p>This is my simple Reactjs tracking weather website that you can search for weathers information from about 200 countries around the world. This project is taken weather API from <a href="https://openweathermap.org/api">https://openweathermap.org/api<a/> and added some awesome effects</p>
+<p>This is my simple ReactJs tracking weather website that you can search for weather information from about 200 countries around the world. This project uses weather API from <a href="https://openweathermap.org/api">https://openweathermap.org/api<a/> and adds some awesome effects.</p>
 <h1>Install this Todo_list_app:</h1>
 <p>1. Clone this github respository</p>
 <p>2. Download node in: https://nodejs.org/en/</p>
