@@ -1,3 +1,5 @@
+import Snowy from '../types/Snowy'
+
 const None = ({name,setName,search,city,cod,getTime}) => {
     return ( 
         <section>
@@ -45,6 +47,7 @@ const None = ({name,setName,search,city,cod,getTime}) => {
                </div>
             </div> 
         </div>
+        <Snowy/>
         </section>
      );
 }

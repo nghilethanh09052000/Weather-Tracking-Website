@@ -1,6 +1,8 @@
+import '../.././assets/css/snow.css'
+
 const Snowy = () => {
     return (
-        <div>
+        <div className='snowBox'>
             
         </div>
       );

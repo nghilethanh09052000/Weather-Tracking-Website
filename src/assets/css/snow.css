@@ -1,0 +1,26 @@
+.snowBox{
+    position: absolute;
+    top: 0%;
+    left:0%;
+    width: 100%;
+    height: 100%;
+}
+.snowBox::before{
+    content: "";
+    background: url('../img/snow1.png'),url('../img/snow2.png'),url('../img/snow3.png');
+    background-size: 10%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left:0%;
+    animation: snow 20s linear infinite;
+}
+@keyframes snow {
+   0%{
+       background-position: 0 0,0 0, 0 0
+   }
+   100%{
+       background-position: 500px 1000px , 400px 400px , 300px 300px ;
+   }
+}
