@@ -4,6 +4,7 @@ import Snowy from '../types/Snowy'
 import Thunderstorm from '../types/Thunderstorm'
 import Drizzle from '../types/Drizzle'
 import Clear from '../types/Clear'
+import Button from './Button' 
 
 const Display = ({name,setName,search,getTime,country,weather,temp,wind,feels_like,humidity,pressure}) => {
   const backGround = () =>{
@@ -26,6 +27,7 @@ const Display = ({name,setName,search,getTime,country,weather,temp,wind,feels_li
     }
     return ( 
     <section>
+            <Button/>
             <div className="search-box">
             <input 
                 className="search-bar"

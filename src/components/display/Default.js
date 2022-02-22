@@ -1,7 +1,8 @@
-
+import Button from './Button' 
 const Default = ({name,setName,search,getTime}) => {
     return (
     <section>
+        <Button/>
         <div className="search-box">
             <input 
                 className="search-bar"

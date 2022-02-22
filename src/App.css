@@ -54,6 +54,28 @@ section{
   padding: 25px;
 }
 
+.fullscreen{
+  position: absolute;
+  right: 3%;
+  transform: translateX(3%);
+  z-index: 9999;
+}
+
+.fullscreenButton{
+  cursor: pointer;
+  color: #fff;
+  position: absolute;
+
+}
+.fullscreenButton:hover{
+  transform: scale(1.03);
+	-webkit-transform: scale(1.03);
+	-moz-transform: scale(1.03);
+	-ms-transform: scale(1.03);
+	-o-transform: scale(1.03);
+	box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
+}
+
 .search-box{
   width: 60%;
   margin: auto 60px;

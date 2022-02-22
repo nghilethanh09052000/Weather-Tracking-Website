@@ -1,8 +1,10 @@
+import Button from './Button';
 import Snowy from '../types/Snowy'
 
 const None = ({name,setName,search,city,cod,getTime}) => {
     return ( 
         <section>
+            <Button/>
             <div className="search-box">
             <input 
                 className="search-bar"
