@@ -14,17 +14,23 @@ function App() {
  
 const search = (e) =>{
     if(e.key ==="Enter"){
-      fetch(`${api.base}/weather?q=${name}&appid=${api.key}`)
-      .then(res=>res.json())
-      .then(data=>{
-        setWeather(data)
-        setName('')
-      })
-      .catch(err =>{
-        console.log(err)
-      })
+      if(name===""){
+          return true
+      }else{
+        fetch(`${api.base}/weather?q=${name}&appid=${api.key}`)
+        .then(res=>res.json())
+        .then(data=>{
+          setWeather(data)
+          setName('')
+        })
+        .catch(err =>{
+          console.log(err)
+        })
+      }
+      
     }
   }
+
   const getTime = (d)=>{
     let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];

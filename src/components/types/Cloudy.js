@@ -1,4 +1,5 @@
 import '../.././assets/css/cloudy.css'
+
 const Cloudy = () => {
     return ( 
     <div className='imgBox'>

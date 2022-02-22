@@ -6,7 +6,7 @@ import Drizzle from '../types/Drizzle'
 import Clear from '../types/Clear'
 
 const Display = ({name,setName,search,getTime,country,weather,temp,wind,feels_like,humidity,pressure}) => {
-    const backGround = () =>{
+  const backGround = () =>{
         switch(weather){
             case 'Rain':
               return <Rainy/>
@@ -25,7 +25,7 @@ const Display = ({name,setName,search,getTime,country,weather,temp,wind,feels_li
           }
     }
     return ( 
-        <section>
+    <section>
             <div className="search-box">
             <input 
                 className="search-bar"

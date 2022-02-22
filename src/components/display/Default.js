@@ -9,6 +9,7 @@ const Default = ({name,setName,search,getTime}) => {
                 value={name}
                 onChange={(e)=>setName(e.target.value)}
                 onKeyPress={search}
+                required="required"
             />
         </div>
         <div className="box">
