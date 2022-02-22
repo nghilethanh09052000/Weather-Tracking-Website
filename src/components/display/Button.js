@@ -1,8 +1,9 @@
 import { BsArrowsFullscreen } from "@react-icons/all-files/bs/BsArrowsFullscreen";
-import { useState } from "react";
+import { useState, memo } from "react";
 
 const Button = () => {
     const [fullscreen , setFullScreen] = useState(false);
+    console.log(fullscreen)
     const handleFullscreen = () =>{
         if(!fullscreen){
             setFullScreen(true);
@@ -26,4 +27,4 @@ const Button = () => {
     );
 }
  
-export default Button;
+export default memo(Button);
