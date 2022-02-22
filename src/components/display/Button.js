@@ -3,7 +3,6 @@ import { useState, memo } from "react";
 
 const Button = () => {
     const [fullscreen , setFullScreen] = useState(false);
-    console.log(fullscreen)
     const handleFullscreen = () =>{
         if(!fullscreen){
             setFullScreen(true);

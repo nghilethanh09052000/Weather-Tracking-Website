@@ -5,6 +5,7 @@ import Thunderstorm from '../types/Thunderstorm'
 import Drizzle from '../types/Drizzle'
 import Clear from '../types/Clear'
 import Button from './Button' 
+import Input from './Input';
 
 const Display = ({name,setName,search,getTime,country,weather,temp,wind,feels_like,humidity,pressure}) => {
   const backGround = () =>{
@@ -28,15 +29,12 @@ const Display = ({name,setName,search,getTime,country,weather,temp,wind,feels_li
     return ( 
     <section>
             <Button/>
-            <div className="search-box">
-            <input 
-                className="search-bar"
-                placeholder="Search country..."
-                value={name}
-                onChange={(e)=>setName(e.target.value)}
-                onKeyPress={search}
+            <Input
+            name={name}
+            setName={setName}
+            search={search}
             />
-        </div>
+  
         <div className="box">
             <div className="location-box">
                 <div className="location">

@@ -1,18 +1,15 @@
 import Button from './Button' 
+import Input from './Input';
 const Default = ({name,setName,search,getTime}) => {
     return (
     <section>
         <Button/>
-        <div className="search-box">
-            <input 
-                className="search-bar"
-                placeholder="Search country..."
-                value={name}
-                onChange={(e)=>setName(e.target.value)}
-                onKeyPress={search}
-                required="required"
-            />
-        </div>
+        <Input
+            name={name}
+            setName={setName}
+            search={search}
+        />
+
         <div className="box">
             <div className="location-box">
                 <div className="location">

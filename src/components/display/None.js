@@ -1,19 +1,16 @@
 import Button from './Button';
 import Snowy from '../types/Snowy'
+import Input from './Input';
 
 const None = ({name,setName,search,city,cod,getTime}) => {
     return ( 
         <section>
             <Button/>
-            <div className="search-box">
-            <input 
-                className="search-bar"
-                placeholder="Search country..."
-                value={name}
-                onChange={(e)=>setName(e.target.value)}
-                onKeyPress={search}
+            <Input
+            name={name}
+            setName={setName}
+            search={search}
             />
-        </div>
         <div className="box">
             <div className="location-box">
                 <div className="location">
