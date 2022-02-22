@@ -9,14 +9,6 @@
 <p>Reactjs, javascript, html, css</p>
 <h1>Screenshot from the app:</h1>
 <p>Default screen:</p>
-<img src="./src/assets/Capture/Capture.PNG">
-<p>Clouds screen:</p>
-<img src="./src/assets/Capture/Capture1.PNG">
-<p>Clear screen:</p>
-<img src="./src/assets/Capture/Capture2.PNG">
-<p>Rain screen:</p>
-<img src="./src/assets/Capture/Capture3.PNG">
-<p>Snow screen:</p>
-<img src="./src/assets/Capture/Capture4.PNG">
+
 
 
